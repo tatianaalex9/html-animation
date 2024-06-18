@@ -1,0 +1,44 @@
+.container {
+	margin: 100px auto;
+	width: 600px;
+	height: 300px;
+	position: relative;
+	perspective: 1000px;
+}
+
+h1 {
+	text-align: center;
+	line-height: 300px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.door {
+	width: 300px;
+	height: 300px;
+	border: 3px solid #651142;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	background: #872D62;
+}
+
+.left {
+	left: 0;
+	transform-origin: left;
+}
+
+.right {
+	right: 0;
+	transform-origin: right;
+}
+
+.container:hover .left {
+	transform: rotateY(50deg);
+	transition: 2s;
+}
+
+.container:hover .right {
+	transform: rotateY(-50deg);
+	transition: 2s;
+}
